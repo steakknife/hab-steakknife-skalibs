@@ -1,0 +1,15 @@
+pkg_name=skalibs
+pkg_origin=steakknife
+pkg_version="2.7.0.0"
+pkg_description="Package centralizing the free software / open source C development files used for building all software at skarnet.org"
+pkg_maintainer="steakknife"
+pkg_license=("ISC")
+pkg_source="https://skarnet.org/software/${pkg_name}/${pkg_name}-${pkg_version}.tar.gz"
+pkg_filename="${pkg_name}-${pkg_version}.tar.gz"
+pkg_shasum=96494d76669d2f8622511d5d616b6367801a42683c0bb11a8855114e5ccbd756
+pkg_upstream_url="https://skarnet.org/software/${pkg_name}/"
+pkg_deps=(core/glibc)
+pkg_build_deps=(core/make core/gcc)
+pkg_lib_dirs=(lib)
+pkg_include_dirs=(include)
+pkg_pconfig_dirs=(lib/pconfig)
